@@ -74,7 +74,7 @@ export const updateUserFailed = (statusErrors) => {
 
 export const updateUserSuccess = () => { return { type: actions.UPDATE_USER_SUCCESS_FULL } }
 export const removeUserFailed = (statusErrors) => { return { type: actions.REMOVE_USER_FAILED, errors: statusErrors } }
-export const removeUserSuccess = () => { return { type: "REMOVE_USER_SUCCESS_FULL" } }
+export const removeUserSuccess = () => { return { type: actions.REMOVE_USER_SUCCESS_FULL } }
 
 
 export const setEditing = (isEdit) => ({
