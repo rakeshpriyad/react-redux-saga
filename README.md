@@ -1,4 +1,4 @@
-Vanila Redux Saga
+React Redux Saga
 
 npm install 
 
