@@ -65,18 +65,18 @@ export const userReceived = (data) => {
 }
 
 export const saveUserSuccess = () => {
-    return { type: "SAVE_USER_SUCCESS_FULL" }
+    return { type: actions.SAVE_USER_SUCCESS_FULL }
 }
 
 export const updateUserFailed = (statusErrors) => {
-    return { type: 'UPDATE_FAILED', errors: statusErrors }
+    return { type: actions.UPDATE_USER_FAILED, errors: statusErrors }
 }
 
-export const updateUserSuccess = () => { return { type: "UPDATE_USER_SUCCESS_FULL" } }
-export const removeUserFailed = (statusErrors) => { return { type: 'REMOVE_FAILED', errors:  statusErrors} }
-export const removeUserSuccess=() => {return { type: "REMOVE_USER_SUCCESS_FULL" }}
+export const updateUserSuccess = () => { return { type: actions.UPDATE_USER_SUCCESS_FULL } }
+export const removeUserFailed = (statusErrors) => { return { type: actions.REMOVE_USER_FAILED, errors: statusErrors } }
+export const removeUserSuccess = () => { return { type: "REMOVE_USER_SUCCESS_FULL" } }
 
- 
+
 export const setEditing = (isEdit) => ({
     type: actions.SET_EDIT,
     payload: isEdit
